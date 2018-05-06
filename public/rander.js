@@ -2,7 +2,6 @@ import {City} from './city.js';
 import {Comment} from './comment.js';
 import {currentWeb} from "./WeatherChatData.js";
 
-
 class rander{
     constructor (){
     }
@@ -13,10 +12,6 @@ class rander{
         var newHTML = template(currentWeb);
         $('.results').append(newHTML);
     }
-    
 }
-
 const weatherrander = new rander() ;
-
-
 export {weatherrander};

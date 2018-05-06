@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="bootstrap/dist/css/bootstrap.min.css">
@@ -8,9 +7,7 @@
   <link rel="stylesheet" type="text/css" href="style.css">
   <title>weather chat</title>     
 </head>
-
 <body> 
-  
     <div class="container">
         <div class="row">
           <div class="col-md-6 col-md-offset-3">
@@ -24,23 +21,21 @@
                       <span class="addCity input-group-text btn btn-primary" id="basic-addon2">Get Temp</span>
                     </div>
                   </div>
-
             </section>
-            <section class="results">
-              
-           </section>
+             <section class="results">
+            </section>
           </div>
         </div>
-
         <script id="post-template" type="text/x-handlebars-template">
           {{#each cities}}
               <div  class="city" data-id = {{cityId}} >
-                  <h2> {{name}} </h2> 
+                   <h2>  <a href="#" class="remove-post"><i class="fa fa-trash" aria-hidden="true"></i></a> {{name}} </h2> 
                   <p> <i class="fa fa-thermometer-empty"></i> {{tempC}} C  /  {{tempF}} F on {{date}} </p>
                   <div class="comments-container"> 
                       {{#each comments}}
-                      <p class="comment" data-id = {{commentId}}>
-                      <p> {{text}}</p>
+                      <div class="comment" data-id = {{commentId}}>
+                      <h5> <a href="#" class="remove-comment"><i class="fa fa-trash" aria-hidden="true"></i></a> {{text}}</h5>
+                      </div>
                       {{/each}} 
                   </div>                 
                   <div class="input-group mb-3">
