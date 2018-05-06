@@ -1,4 +1,4 @@
-import {WeatherChatData} from "./WeatherChatData.js";
+import {currentWeb} from "./WeatherChatData.js";
 import {City} from './city.js';
 
 

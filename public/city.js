@@ -1,4 +1,4 @@
-import {WeatherChatData} from "./WeatherChatData.js";
+import {currentWeb} from "./WeatherChatData.js";
 import {Comment} from './comment.js';
 
 class City {
